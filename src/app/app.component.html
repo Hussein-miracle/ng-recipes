@@ -1,0 +1,12 @@
+<app-header (navItemClicked)="handleNavItemClicked($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <!-- <app-recipes *ngIf="showAddRecipes; else showShoppingList" [recipes]="recipes"></app-recipes>
+      <ng-template #showShoppingList>
+        <app-shopping-list #showShoppingList></app-shopping-list>
+      </ng-template> -->
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
